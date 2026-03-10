@@ -25,7 +25,7 @@ import plotly.graph_objects as go
 from pathlib import Path
 
 st.set_page_config(
-    page_title="Budget Sentinel Kenya",
+    page_title="Hesabu — County Budget Intelligence",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
