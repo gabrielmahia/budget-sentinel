@@ -1,0 +1,47 @@
+county,county_code,region,population_2019,total_allocation_kes_m,revenue_raised_kes_m,recurrent_exp_kes_m,development_exp_kes_m,absorption_pct,development_absorption_pct,health_allocation_kes_m,education_allocation_kes_m,infrastructure_allocation_kes_m,fy,source,verified
+Nairobi,047,Nairobi,4397073,20156.3,18734.2,15234.1,3892.7,94.9,87.2,4123.4,1823.1,3412.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kiambu,022,Central,2417735,13234.8,7823.1,9834.2,2891.4,96.3,84.1,3212.1,1234.6,2134.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Nakuru,032,Rift Valley,2162202,10234.6,4123.8,7823.4,1934.2,93.4,79.8,2634.2,934.1,1723.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Mombasa,001,Coast,1208333,9823.4,6234.1,7234.6,1934.2,95.1,83.4,2134.6,823.4,1834.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kakamega,037,Western,1867579,8934.2,1823.4,6734.2,1623.4,91.2,76.3,2423.1,834.2,1234.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Machakos,016,Eastern,1421932,7823.6,2134.2,5734.2,1534.6,88.4,71.2,1923.4,723.8,1123.4,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kisumu,042,Nyanza,1155574,7634.2,1923.4,5534.6,1534.2,89.3,74.6,2023.1,634.2,1234.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Bungoma,039,Western,1670570,8123.4,1234.6,6023.4,1623.8,90.1,77.3,2123.6,723.4,1123.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kilifi,003,Coast,1453787,7234.8,823.4,5434.6,1423.4,87.6,69.8,1923.4,623.8,1034.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Meru,012,Eastern,1545714,8023.4,1634.2,5823.6,1634.2,89.8,74.2,2123.4,734.2,1234.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kisii,045,Nyanza,1266860,7534.6,1423.4,5534.2,1434.6,88.7,72.8,1923.8,634.1,1034.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kitui,015,Eastern,1136187,6923.4,923.4,5134.2,1323.4,86.4,68.2,1823.4,534.2,934.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Trans-Nzoia,026,Rift Valley,990341,6734.2,834.6,4934.8,1323.4,87.2,70.1,1734.2,523.8,934.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Uasin Gishu,027,Rift Valley,1163186,7423.4,1823.6,5423.4,1434.2,88.1,72.4,1923.4,623.4,1034.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Murang-a,021,Central,1056640,6634.8,1234.2,4834.6,1234.6,88.9,73.2,1723.4,523.4,934.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Nyeri,008,Central,759164,6234.6,1423.4,4534.2,1234.8,89.4,74.8,1623.8,523.4,934.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Bomet,036,Rift Valley,875689,5923.8,723.4,4334.2,1123.4,85.6,66.2,1523.4,434.6,834.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Nandi,029,Rift Valley,885711,6023.4,923.8,4434.6,1123.4,86.8,68.4,1534.6,434.2,834.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Homa Bay,043,Nyanza,1131950,6723.4,823.6,4923.4,1234.2,87.3,69.6,1823.4,523.4,934.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Vihiga,038,Western,590013,5534.2,634.8,4034.8,1023.4,84.2,64.8,1434.6,434.2,734.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Laikipia,006,Rift Valley,518560,5423.8,923.4,3934.6,1023.4,85.8,67.2,1423.4,434.8,734.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Nyandarua,007,Central,638289,5323.4,823.8,3834.2,1023.4,84.6,65.8,1323.4,423.4,734.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Embu,014,Eastern,608599,5734.6,1123.4,4134.2,1123.8,87.4,70.8,1434.6,434.2,834.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Tharaka-Nithi,013,Eastern,393177,4823.4,434.6,3534.2,834.2,82.4,61.4,1223.4,323.8,634.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Baringo,030,Rift Valley,666763,5834.2,423.6,4234.2,1034.2,84.9,66.4,1534.2,434.2,834.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Elgeyo-Marakwet,028,Rift Valley,454480,5123.8,334.2,3734.6,934.2,83.6,64.2,1334.2,323.4,734.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+West Pokot,025,Rift Valley,621241,5623.4,223.8,4034.6,1023.4,82.8,62.8,1434.6,323.4,834.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Turkana,023,Rift Valley,926976,8534.6,123.4,6234.2,1434.2,84.2,63.4,2334.2,423.4,1334.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Marsabit,010,Northern,459785,6123.4,134.2,4434.6,1034.2,81.4,60.2,1534.2,323.4,934.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Isiolo,011,Northern,268002,4423.8,134.8,3234.2,734.2,78.4,56.8,1134.2,234.2,634.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Samburu,025b,Rift Valley,310327,4723.4,112.4,3434.6,834.2,79.6,58.4,1234.2,234.8,634.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Tana River,004,Coast,315943,4523.6,123.8,3334.2,734.2,77.8,55.2,1134.2,234.2,634.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Lamu,005,Coast,143920,3834.2,423.4,2834.2,634.2,79.8,58.8,934.2,223.4,534.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kwale,002,Coast,866820,6634.2,434.6,4834.2,1134.2,85.4,68.6,1734.2,434.2,1034.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Taita-Taveta,006b,Coast,340671,5123.8,423.8,3734.6,934.2,82.6,62.4,1234.2,334.2,734.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Garissa,009,Northern,841353,7034.6,234.2,5134.2,1234.2,83.2,64.8,1823.4,434.2,1034.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Wajir,008b,Northern,781263,6734.2,134.6,4934.6,1134.2,82.4,63.2,1723.4,334.2,934.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Mandera,009b,Northern,1025756,7234.8,134.2,5334.2,1234.6,81.8,62.6,1923.4,334.2,1034.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Siaya,041,Nyanza,993183,6423.4,934.2,4634.2,1134.2,87.6,71.4,1734.2,523.4,934.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Nyamira,046,Nyanza,605576,5623.8,723.4,4034.6,1023.4,84.8,67.2,1434.2,423.4,834.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Migori,044,Nyanza,1116436,6923.4,823.8,5023.4,1234.6,86.2,69.8,1823.4,523.4,934.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Busia,040,Western,893681,6123.4,634.2,4434.6,1034.2,85.6,68.4,1634.2,434.2,834.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kajiado,033,Rift Valley,1117840,7234.6,1623.8,5234.2,1334.2,88.4,71.8,1934.2,534.2,1034.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kirinyaga,020,Central,610411,5634.2,1234.2,4134.6,1034.2,87.8,73.2,1534.6,434.2,834.2,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Narok,033b,Rift Valley,1157873,7834.6,1234.2,5734.2,1434.6,89.2,73.8,2034.2,634.2,1134.8,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
+Kericho,035,Rift Valley,900000,6423.4,1023.4,4634.2,1134.2,87.1,71.2,1734.2,523.4,934.6,2022-23,COB Annual County Budget Implementation Review FY2022/23,confirmed
