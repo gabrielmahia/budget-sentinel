@@ -144,7 +144,7 @@ if PAGE == "🗺️ National Overview":
     high_absorption = (df["development_absorption_pct"] >= 80).sum()
 
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total allocated (47 counties)", f"KES {total_allocated:.1f}B")
+    c1.metric("Total allocated (46 counties)", f"KES {total_allocated:.1f}B")
     c2.metric("Average dev. absorption", f"{avg_absorption:.1f}%")
     c3.metric("Counties: absorption < 70%", str(low_absorption), delta="needs attention", delta_color="inverse")
     c4.metric("Dev. funds unspent", f"KES {total_unspent:.1f}B", delta="vs allocation", delta_color="inverse")
