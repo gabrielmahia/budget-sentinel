@@ -23,6 +23,8 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from pathlib import Path
+import urllib.request
+import xml.etree.ElementTree as ET
 
 st.set_page_config(
     page_title="Hesabu — County Budget Intelligence",
@@ -70,6 +72,36 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
 
 # ── Data ──────────────────────────────────────────────────────────────────────
 DATA = Path(__file__).parent / "data" / "allocations"
+
+@st.cache_data(ttl=3600)
+def fetch_cob_live():
+    """Fetch latest publications from Controller of Budget RSS feed.
+    Returns list of {title, link, date, summary} or [] on failure.
+    """
+    try:
+        req = urllib.request.Request(
+            "https://cob.go.ke/feed/",
+            headers={"User-Agent": "budget-sentinel/1.0 (+https://budget-sentinel.streamlit.app)"},
+        )
+        with urllib.request.urlopen(req, timeout=8) as r:
+            xml_content = r.read()
+        root = ET.fromstring(xml_content)
+        ns = {"content": "http://purl.org/rss/1.0/modules/content/"}
+        items = []
+        for item in root.findall(".//item")[:5]:
+            title = item.findtext("title", "").strip()
+            link  = item.findtext("link",  "").strip()
+            date  = item.findtext("pubDate", "").strip()[:16]
+            desc  = item.findtext("description", "")
+            # Strip HTML from description
+            import re
+            desc = re.sub(r"<[^>]+>", "", desc).strip()[:180]
+            if title:
+                items.append({"title": title, "link": link, "date": date, "summary": desc})
+        return items
+    except Exception:
+        return []
+
 
 @st.cache_data(ttl=86400)
 def load_budgets():
@@ -189,6 +221,22 @@ if PAGE == "🗺️ National Overview":
         "dev_absorption_band": "Band",
     })
     st.dataframe(display, use_container_width=True, hide_index=True)
+
+    # Compact live signal from COB
+    st.divider()
+    st.markdown("#### 📡 Latest from COB")
+    cob_live = fetch_cob_live()
+    if cob_live:
+        latest = cob_live[0]
+        st.markdown(
+            f"**{latest['title'][:80]}{'…' if len(latest['title']) > 80 else ''}**  \n"
+            f"*{latest['date']}*  \n"
+            f"[→ cob.go.ke]({latest['link']})"
+        )
+        if len(cob_live) > 1:
+            st.caption(f"+ {len(cob_live)-1} more recent publications")
+    else:
+        st.caption("[→ cob.go.ke](https://cob.go.ke)")
 
 
 # ═══════════════════════════════════════════════════════════
@@ -474,6 +522,21 @@ figure and a link to the relevant COB report page.
     st.divider()
     st.subheader("Download raw data")
     df_download = df.drop(columns=["dev_absorption_band"])
+    # ── Live signal from COB ──────────────────────────────────────────
+    st.divider()
+    st.subheader("📡 Latest from Controller of Budget")
+    st.caption("Live from cob.go.ke — refreshed hourly")
+    cob_items = fetch_cob_live()
+    if cob_items:
+        for item in cob_items:
+            with st.expander(f"**{item['title'][:90]}**" + ("…" if len(item['title']) > 90 else "")):
+                st.caption(item["date"])
+                st.write(item["summary"] + "…" if item["summary"] else "")
+                st.markdown(f"[Read full report at cob.go.ke →]({item['link']})")
+    else:
+        st.info("COB live feed temporarily unavailable. Visit [cob.go.ke](https://cob.go.ke) directly.")
+
+    st.divider()
     st.download_button(
         "📥 Download full dataset (CSV)",
         df_download.to_csv(index=False).encode(),
