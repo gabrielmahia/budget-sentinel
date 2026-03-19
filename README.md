@@ -3,6 +3,7 @@
 County development fund absorption tracker — powered by Controller of Budget data.
 
 [![Live App](https://img.shields.io/badge/Live%20App-budget--sentinel.streamlit.app-FF4B4B?logo=streamlit)](https://budget-sentinel.streamlit.app)
+[![Live Data](https://img.shields.io/badge/Live%20Data-COB%20RSS-00b4d8)](#budget-sentinel)
 [![CI](https://github.com/gabrielmahia/budget-sentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/gabrielmahia/budget-sentinel/actions)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
