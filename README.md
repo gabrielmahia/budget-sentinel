@@ -87,3 +87,15 @@ Part of a suite of civic and community tools built by [Gabriel Mahia](https://gi
 | [🦁 Dagoretti](https://dagoretti-high-school-community-app.streamlit.app) | Alumni atlas & community hub for Dagoretti High |
 | [⛪ Jumuia](https://jumuia.streamlit.app) | Catholic parish tools — church finder, pastoral care |
 
+
+## Procurement data (OCDS)
+
+Kenya's Public Procurement Regulatory Authority publishes OCDS (Open Contracting Data Standard) data:
+
+- **Bulk download:** https://tenders.go.ke/ocds
+- **Data registry:** https://data.open-contracting.org/en/publication/147
+- **Makueni County** (historical, stopped 2022): https://data.open-contracting.org/en/publication/13
+
+A future version of Hesabu will correlate county budget execution data with actual procurement contracts — showing not just what counties planned to spend, but what they contracted for.
+
+Data source: Open Contracting Partnership (OCP). Thanks to the OCP team for pointing to these resources.
