@@ -5,6 +5,7 @@ import pytest
 from pathlib import Path
 
 DATA = Path(__file__).parent.parent / "data" / "allocations"
+DATA_ROOT = Path(__file__).parent.parent / "data"
 
 
 class TestSeedData:
@@ -28,10 +29,22 @@ class TestSeedData:
         }
         assert required.issubset(df.columns)
 
-    def test_all_confirmed(self):
-        df = self._df()
-        bad = df[df["verified"] != "confirmed"]
-        assert len(bad) == 0, f"Unverified: {bad['county'].tolist()}"
+    def test_confirmed_rows_are_backed_by_the_verification_log(self):
+        """'confirmed' must be earned. The old test required EVERY row to say confirmed, so the label could only ever go up and no evidence was needed.
+        A row may claim confirmed only if data/VERIFICATION_LOG.csv records evidence for it."""
+        import csv
+        log = list(csv.DictReader(open(DATA_ROOT / "VERIFICATION_LOG.csv", encoding="utf-8")))
+        logged = {(r["file"], r["row_key"]) for r in log if r["evidence_url"].strip() and r["verified_by"].strip() and r["verified_on"].strip()}
+        for rel, key in [('allocations/county_budgets_fy2223.csv', 'county')]:
+            df = pd.read_csv(DATA_ROOT / rel)
+            assert set(df["verified"]) <= {"confirmed", "unverified"}, rel
+            claimed = {(rel, str(v)) for v in df[df["verified"] == "confirmed"][key]}
+            assert claimed <= logged, f"{rel}: rows claim 'confirmed' with no logged evidence: {sorted(claimed - logged)[:5]}"
+
+    def test_county_codes_match_the_official_list(self):
+        """12 rows carried another county's code and five used invented suffixes such as '025b'."""
+        df = pd.read_csv(DATA / "county_budgets_fy2223.csv", dtype={"county_code": str})  # pandas would turn "047" into 47
+        assert df["county_code"].str.fullmatch(r"\d{3}").all() and df["county_code"].is_unique
 
     def test_source_is_cob(self):
         df = self._df()

@@ -36,7 +36,7 @@ that answers: **Where are development funds going unspent — and by how much?**
 
 ## Trust principles
 
-- All figures are from **COB published reports** (public domain). Source column in every CSV.
+- All figures are attributed to **COB published reports** (public domain); a source column is in every CSV. **They have not been independently verified**: see `data/DATA_STATUS.md`.
 - Low absorption is a **factual observation**, not an accusation. Multiple causes exist.
 - This tool does not name individuals or make forensic accounting conclusions.
 - Verify originals at [cob.go.ke](https://cob.go.ke/reports/county-budget-implementation-review/).
