@@ -650,7 +650,7 @@ figure and a link to the relevant COB report page.
 st.divider()
 st.caption(
     "Budget Sentinel Kenya · Data: Controller of Budget FY 2022/23 (public domain) · "
-    "App: CC BY-NC-ND 4.0 · contact@aikungfu.dev · "
+    "App: PolyForm Noncommercial 1.0.0 · contact@aikungfu.dev · "
     "Not affiliated with the Controller of Budget or any county government · "
     "Low absorption is a factual observation, not an accusation"
 )
